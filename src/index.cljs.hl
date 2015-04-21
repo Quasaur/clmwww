@@ -4,7 +4,72 @@
 
 (reload-all 1000)
 
-(html
-  (head)
+(html :lang "en"
+  (head
+   (html-meta :charset "utf-8")
+   (html-meta :name "viewport" :content "width=device-width, initial-scale=1")
+   (html-meta :name "GOOGLEBOT" :content "NOINDEX, NOFOLLOW")
+   (title "Welcome to WWW.CLMitchell.net!")
+   (link :rel "shortcut icon" ::href "favicon.ico")
+   (link :rel "stylesheet" :type "text/css" :href "css/eggplant2.min.css")
+   (link :rel "stylesheet" :type "text/css" :href "css/jquery.mobile.structure-1.2.0.min.css"))
   (body
-    (h1 "Hello, World!")))
+    (div :data-role "page" :data-theme "a"
+      (div :data-role "header" :data-position "inline"
+        (h2 "CLMitchell.net")
+        (div :data-role "navbar"
+          (ul
+            (li (a :href "http://main.clmitchell.net/" :target "_parent" "Main"))
+            (li (a :href "http://history.clmitchell.net/" :target "_parent" "History"))
+            (li (a :href "http://clmitchell.bandcamp.com/" :target "_parent" "Music"))
+            (li (a :href "http://svcs.clmitchell.net/" :target "_parent" "Services"))
+            (li (a :href "http://main.clmitchell.net/home/resumes144.html" :target "_parent" "Resumes"))
+            (li (a :href "http://books.clmitchell.net/" :target "_parent" "Books"))))) ;end a, li, ul, :data-role navbar, :data-role header
+
+      (div :data-role "content" :data-theme "a"
+        (div :data-role "list-divider" (strong "Detail:"))
+          (div :class "ui-grid-a"
+            (div :class "ui-block-a"
+              (div :data-role "collapsible-set" :data-theme "a" :data-content-theme "a">
+                (div :data-role "collapsible" :data-collapsed "true"
+                  (h3 "Main")
+                  (p "My original Joomla 1.5 site, containing my blogs, some yet-to-be-published music, a prayer portal, a Christianity FAQ and my favorite Internet links."))
+                (div :data-role "collapsible"
+                  (h3 "History")
+                  (p "My History of the World...contains maps, timelines and forms to add your own events!"))
+                (div :data-role "collapsible"
+                  (h3 "Music")
+                  (p "Download free audios in multiple formats of my compositions! If you are a musician, my compositions are available in sheet music (PDF) at reasonable prices."))
+                (div :data-role "collapsible"
+                  (h3 "Services")
+                  (p "I offer the following services to my community: Computer & Network Support & Repair, Web Development, Clerical Typing & Transcription and Music Composition, Arranging &amp; Transcription."))))
+          (div :class "ui-block-b"
+            (div :data-role "collapsible-set" :data-theme "a" :data-content-theme "a"
+               (div :data-role "collapsible" :data-collapsed "true"
+                 (h3 "Resumes")
+                 (p "Long and short versions in HTML and MS Word."))
+               (div :data-role "collapsible"
+                 (h3 "Books")
+                 (p "The new Joomla 2.5 site for my books, sermons and audio material."))
+               (div :data-role "collapsible"
+                 (h3 "About Me")
+                 (p "I ride the Wave of Time to my Ultimate Destiny: Eternity. I am an"(br)
+                    "Author"(br)
+                    "Composer"(br)
+                    "IT Consultant"(br)
+                    "with 20 years of experience in Information Technology, 26 years of experience in Music and nearly 30 years of experience with Jesus Christ."))))))
+
+      (div :data-role "footer"
+        (div :class "ui-grid-b"
+          (div :class "ui-block-a ui-bar-d" :style "height: 120px"
+            (a :href "http://www.classmates.com/people/Calvin-Mitchell/2534481" :target "_blank" :data-role "button" :data-theme "a" "My Classmates")
+            (a :href "http://www.plaxo.com/profile/showPublic/42949847553?%20src=badge&amp;ppk=0c01c37e42d535641af33a611eb7ee110127668e" :target "_blank" :data-role "button" :data-theme "a" "My Plaxo")
+            (a :href "http://www.google.com/profiles/quasaur" :target "_blank" :data-role "button" :data-theme "a" "My Google"))
+          (div :class "ui-block-b ui-bar-d" :style "height: 120px"
+            (a :href "http://www.linkedin.com/in/quasaur" :target "_blank" :data-role "button" :data-theme "a" "My LinkedIn")
+            (a :href "http://twitter.com/quasaur" :target "_blank" :data-role "button" :data-theme "a" "My Twitter")
+            (a :href "http://www.myspace.com/quasaur" :target "_blank" :data-role "button" :data-theme "a" "MySpace"))
+          (div :class "ui-block-c ui-bar-d" :style "height: 120px"
+            (a :href "http://www.facebook.com/Quasaur" :target "_blank" :data-role "button" :data-theme "a" "My Facebook")
+            (a :href "http://www.youtube.com/user/quasaur" :target "_blank" :data-role "button" :data-theme "a" "My YouTube")
+            (a :href "http://www.shelfari.com/quasaur" :target "_blank" :data-role "button" :data-theme "a" "My Shelfari")))))))

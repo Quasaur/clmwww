@@ -1,24 +1,23 @@
 # clmwww
 
-A Hoplon project designed to...well, that part is up to you.
+A Hoplon project designed to reproduce my JQuery Mobile-built webpage at www.clmitchell.net--at it works!
 
 ## Dependencies
 
-- java 1.7+
-- [boot][1]
+- java 1.8+
+- [boot version 1][1]
 - [leiningen][2]
+- [hoplon version 5.10.25][3]
 
 ## Usage
 
 1. Start the auto-compiler. In a terminal:
 
     ```bash
-    $ boot development
+    $ java -jar <path to boot jar>\boot-1.1.1.jar development
     ```
 
-2. Go to [http://localhost:8000][3] in your browser. You should see "Hello, World!".
-
-3. You're already done.
+2. You're already done.
 
 ## License
 
@@ -26,4 +25,4 @@ Copyright © 2015, **Your Name Goes Here**
 
 [1]: https://github.com/tailrecursion/boot
 [2]: https://github.com/technomancy/leiningen
-[3]: http://localhost:8000
+[3]: http://github.com/tailrecursion/hoplon

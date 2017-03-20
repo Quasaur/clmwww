@@ -1,6 +1,6 @@
 # clmwww
 
-A Hoplon project designed to reproduce my JQuery Mobile-built webpage at www.clmitchell.net--at it works!
+A Hoplon project designed to reproduce my JQuery Mobile-built webpage at www.clmitchell.net--and it works!
 
 ## Dependencies
 
